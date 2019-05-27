@@ -13,7 +13,7 @@ export class SearchPokeForm extends Component {
                     <Input placeholder="Digite o nome do pokémon" value={this.props.nome} onChange={this.props.onChange}/>
                 </Col>
                 <Col xs="2">
-                    <Button type="submit" children="Buscar"/>
+                    <Button disable= {(this.props.nome === "")} type="submit" children="Buscar"/>
                 </Col>  
             </Row>
             </form>
