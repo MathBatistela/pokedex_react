@@ -5,7 +5,9 @@ export class MyButton extends Component {
     render() {
         return (
             <div>
-                <Button>{this.props.children}</Button>
+                <Button variant="dark" style={{
+                    borderRadius: "10px 50px 50px 10px"
+                }} > {this.props.children}</Button>
             </div>
         )
     }
