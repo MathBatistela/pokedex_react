@@ -6,14 +6,17 @@ import Button from "../Button"
 export class SearchPokeForm extends Component {
     render() {
         return (
+            <form onSubmit={this.props.onSubmit}> 
             <Row>
+
                 <Col xs="10">
-                    <Input placeholder="Digite o nome do pokémon"/>
+                    <Input placeholder="Digite o nome do pokémon" value={this.props.nome} onChange={this.props.onChange}/>
                 </Col>
                 <Col xs="2">
-                    <Button children="Buscar"/>
+                    <Button type="submit" children="Buscar"/>
                 </Col>  
             </Row>
+            </form>
         )
     }
 }

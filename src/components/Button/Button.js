@@ -7,7 +7,7 @@ export class MyButton extends Component {
             <div>
                 <Button variant="dark" style={{
                     borderRadius: "10px 50px 50px 10px"
-                }} > {this.props.children}</Button>
+                }} type={this.props.type}> {this.props.children}</Button>
             </div>
         )
     }
